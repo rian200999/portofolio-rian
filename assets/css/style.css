@@ -1,20 +1,20 @@
 :root {
     /* Palet Terang (Light Mode) */
     --light-bg: #ffffff;
-    --light-sec: #fffbeb; 
-    --text-dark: #2d1b0d; /* Cokelat Espresso buat teks */
+    --light-sec: #fff1f2; /* Putih dengan rona pink sangat tipis */
+    --text-dark: #500724; /* Pink Tua Banget buat teks */
     --text-muted-dark: #71717a;
     
-    /* Palet Gelap COKELAT (Deep Espresso) */
-    --dark-bg: #2d1b0d;    /* Cokelat Tua Pekat (Deep Brown) */
-    --dark-sec: #3e2716;   /* Cokelat Sedang (Buat kartu/box) */
+    /* Palet Gelap PINK BERRY (Deep & Premium) */
+    --dark-bg: #500724;    /* Pink Tua Banget (Deep Berry) */
+    --dark-sec: #831843;   /* Pink Maroon/Rose Tua (Buat kartu/box) */
     
-    --text-light: #fffbeb;
-    --text-muted-light: #fbbf24; /* Kuning Amber cerah */
+    --text-light: #fff1f2;
+    --text-muted-light: #f472b6; /* Pink Rose (Ga terlalu muda, ga terlalu neon) */
 
-    /* Aksen Warna SUNSET (Orange & Yellow) */
-    --primary-color: #f97316; /* Orange Cerah */
-    --accent-color: #fbbf24;  /* Kuning Amber */
+    /* Aksen Warna PINK (Rose & Fuchsia) */
+    --primary-color: #db2777; /* Pink Fuchsia Solid (Ijo Mantap) */
+    --accent-color: #be185d;  /* Pink Rose Tua (Aksen Mantap) */
     --transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -807,59 +807,18 @@ section { min-height: 100vh; padding: 120px 20px 80px; }
 }
 
 
-/* Update Logo Rian. */
-.logo span { color: var(--primary-color); }
+/* DISI */
 
-/* Tombol (Update Shadow Orange) */
-.btn { 
-    background: var(--primary-color); 
-    box-shadow: 0 10px 20px rgba(249, 115, 22, 0.2); 
-}
-.btn:hover { 
-    background: var(--accent-color);
-    color: #451a03; /* Teks jadi cokelat tua pas hover di kuning biar kebaca */
-    box-shadow: 0 15px 25px rgba(251, 191, 36, 0.4); 
-}
 
-/* Badge & Glow (Skills/Language) */
-.badge-hero, .bento-badge {
-    background: rgba(249, 115, 22, 0.1);
-    color: var(--primary-color);
-    border: 1px solid rgba(249, 115, 22, 0.2);
-}
-
-/* Efek Hover Skill Card (Glow Sunset Neon) */
-.tech-card-big:hover {
-    background: rgba(251, 191, 36, 0.05); 
-    box-shadow: 0 20px 50px rgba(251, 191, 36, 0.2); 
-    border-color: rgba(251, 191, 36, 0.3);
-}
-
-/* Timeline Node Glow */
-.timeline-item:hover .time-dot {
-    background: var(--primary-color);
-    box-shadow: 0 0 15px var(--primary-color);
-}
-
-/* Contact Box Glow (Orange Amber) */
-.contact-box::before {
-    background: radial-gradient(circle, rgba(251, 191, 36, 0.15) 0%, transparent 60%);
-}
-
-/* Social Media Button Hover */
-.social-btn:hover {
-    background: var(--primary-color);
-    box-shadow: 0 10px 20px rgba(249, 115, 22, 0.4);
-}
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
 
 body { background: var(--light-bg); color: var(--text-dark); overflow-x: hidden; }
 .container { max-width: 1100px; margin: 0 auto; width: 100%; }
 
-/* Teks Gradasi Sunset */
+/* Teks Gradasi Pink Rose */
 .text-gradient {
-    background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+    background: linear-gradient(to right, var(--primary-color), var(--text-muted-light));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -876,11 +835,11 @@ body { background: var(--light-bg); color: var(--text-dark); overflow-x: hidden;
 section { min-height: 100vh; padding: 120px 20px 80px; }
 .heading { font-size: 42px; margin-bottom: 60px; font-weight: 800; text-align: center; color: var(--text-dark); }
 
-/* Tombol Elegan (Sunset) */
-.btn { display: inline-block; padding: 12px 30px; background: var(--primary-color); color: #fff; border-radius: 30px; text-decoration: none; font-weight: 600; transition: var(--transition); border: none; box-shadow: 0 10px 20px rgba(249, 115, 22, 0.2); }
-.btn:hover { transform: translateY(-3px); box-shadow: 0 15px 25px rgba(249, 115, 22, 0.4); background: var(--accent-color); color: var(--text-dark);}
+/* Tombol Elegan (Deep Rose) */
+.btn { display: inline-block; padding: 12px 30px; background: var(--primary-color); color: #fff; border-radius: 30px; text-decoration: none; font-weight: 600; transition: var(--transition); border: none; box-shadow: 0 10px 20px rgba(219, 39, 119, 0.2); }
+.btn:hover { transform: translateY(-3px); box-shadow: 0 15px 25px rgba(219, 39, 119, 0.4); background: var(--accent-color); color: #fff;}
 .btn-outline { background: transparent; color: var(--primary-color); border: 2px solid var(--primary-color); box-shadow: none; margin-left: 15px; }
-.btn-outline:hover { background: rgba(249, 115, 22, 0.05); transform: translateY(-3px);}
+.btn-outline:hover { background: rgba(219, 39, 119, 0.05); transform: translateY(-3px);}
 
 /* =========================================
    1. HOME
@@ -897,8 +856,8 @@ section { min-height: 100vh; padding: 120px 20px 80px; }
 }
 .hero-wrapper-center { position: relative; z-index: 2; max-width: 850px; margin: 0 auto; }
 .badge-hero {
-    display: inline-block; padding: 8px 24px; background: rgba(249, 115, 22, 0.1);
-    color: var(--primary-color); border-radius: 30px; font-weight: 600; font-size: 14px; margin-bottom: 25px; border: 1px solid rgba(249, 115, 22, 0.2);
+    display: inline-block; padding: 8px 24px; background: rgba(219, 39, 119, 0.1);
+    color: var(--primary-color); border-radius: 30px; font-weight: 600; font-size: 14px; margin-bottom: 25px; border: 1px solid rgba(219, 39, 119, 0.2);
 }
 .hero-text-center h1 { font-size: 64px; font-weight: 800; line-height: 1.15; margin: 10px 0 20px; color: var(--text-dark); }
 .hero-text-center p { font-size: 17px; color: var(--text-muted-dark); margin-bottom: 40px; line-height: 1.8; }
@@ -908,24 +867,24 @@ section { min-height: 100vh; padding: 120px 20px 80px; }
    2. ABOUT (Bento Box)
    ========================================= */
 #about { background: var(--light-sec); }
-.about-bento { display: flex; background: #fff; border-radius: 30px; box-shadow: 0 20px 40px rgba(45, 27, 13, 0.05); overflow: hidden; border: 1px solid rgba(45, 27, 13, 0.05); }
+.about-bento { display: flex; background: #fff; border-radius: 30px; box-shadow: 0 20px 40px rgba(80, 7, 36, 0.05); overflow: hidden; border: 1px solid rgba(80, 7, 36, 0.05); }
 .bento-photo { flex: 0 0 40%; background: var(--light-bg); padding: 50px; display: flex; align-items: center; justify-content: center; }
-.photo-frame { width: 100%; max-width: 320px; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(249, 115, 22, 0.15); border: 8px solid #fff; transform: rotate(-3deg); transition: var(--transition); }
+.photo-frame { width: 100%; max-width: 320px; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(219, 39, 119, 0.15); border: 8px solid #fff; transform: rotate(-3deg); transition: var(--transition); }
 .photo-frame:hover { transform: rotate(0deg) scale(1.03); }
 .photo-frame img { width: 100%; height: auto; display: block; object-fit: cover; }
 
 .bento-content { flex: 1; padding: 60px 60px 60px 20px; display: flex; flex-direction: column; justify-content: center; }
-.bento-badge { display: inline-block; padding: 6px 16px; background: rgba(249, 115, 22, 0.1); color: var(--primary-color); border-radius: 20px; font-size: 13px; font-weight: 700; margin-bottom: 25px; width: fit-content; }
+.bento-badge { display: inline-block; padding: 6px 16px; background: rgba(219, 39, 119, 0.1); color: var(--primary-color); border-radius: 20px; font-size: 13px; font-weight: 700; margin-bottom: 25px; width: fit-content; }
 .bento-content h3 { font-size: 32px; color: var(--text-dark); margin-bottom: 20px; }
 .bento-content p { color: var(--text-muted-dark); font-size: 16px; line-height: 1.8; margin-bottom: 40px; }
 
 /* Badge Bahasa */
 .lang-badge { display: flex; align-items: center; gap: 15px; background: #fff; padding: 16px 20px; border-radius: 16px; border: 1px solid rgba(0, 0, 0, 0.1); transition: 0.3s; width: 100%; }
-.lang-badge:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(249, 115, 22, 0.05); border-color: var(--primary-color); }
-.lang-badge.active-glow { border: 1.5px solid rgba(249, 115, 22, 0.3); background: rgba(249, 115, 22, 0.02); }
+.lang-badge:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(219, 39, 119, 0.05); border-color: var(--primary-color); }
+.lang-badge.active-glow { border: 1.5px solid rgba(219, 39, 119, 0.3); background: rgba(219, 39, 119, 0.02); }
 
 /* =========================================
-   3. SKILLS (Deep Cokelat)
+   3. SKILLS (Deep Berry Pink)
    ========================================= */
 #skills { background: var(--dark-bg); color: var(--text-light); }
 #skills .heading { color: #fff; }
@@ -937,24 +896,24 @@ section { min-height: 100vh; padding: 120px 20px 80px; }
 .tech-card-big span { font-size: 18px; font-weight: 700; color: #fff; }
 
 .tech-card-big:hover {
-    transform: translateY(-10px); background: rgba(251, 191, 36, 0.05); 
-    box-shadow: 0 20px 50px rgba(251, 191, 36, 0.2); border-color: rgba(251, 191, 36, 0.3);
+    transform: translateY(-10px); background: rgba(244, 114, 182, 0.05); 
+    box-shadow: 0 20px 50px rgba(244, 114, 182, 0.2); border-color: rgba(244, 114, 182, 0.3);
 }
-.tech-card-big:hover i { color: var(--accent-color); filter: drop-shadow(0 0 15px var(--accent-color)); }
+.tech-card-big:hover i { color: var(--text-muted-light); filter: drop-shadow(0 0 15px var(--text-muted-light)); }
 
 /* =========================================
-   4. PORTOFOLIO (Deep Cokelat)
+   4. PORTOFOLIO (Deep Berry Pink)
    ========================================= */
 #portofolio { background: var(--dark-bg); color: var(--text-light); }
 #portofolio .heading { color: var(--text-light); }
 .proj-visual { flex: 1; height: 350px; background: var(--dark-sec); border-radius: 24px; display: flex; justify-content: center; align-items: center; border: 1px solid rgba(255,255,255,0.05); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
-.proj-visual i { font-size: 100px; color: var(--accent-color); opacity: 0.3; }
-.tags span { font-size: 12px; padding: 6px 15px; border-radius: 20px; background: rgba(249, 115, 22, 0.1); color: var(--accent-color); border: 1px solid rgba(249, 115, 22, 0.2); }
+.proj-visual i { font-size: 100px; color: var(--text-muted-light); opacity: 0.3; }
+.tags span { font-size: 12px; padding: 6px 15px; border-radius: 20px; background: rgba(219, 39, 119, 0.1); color: var(--text-muted-light); border: 1px solid rgba(219, 39, 119, 0.2); }
 
 /* =========================================
    5. ARTIKEL
    ========================================= */
-.article-card:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(249, 115, 22, 0.1); border-color: rgba(249, 115, 22, 0.2); }
+.article-card:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(219, 39, 119, 0.1); border-color: rgba(219, 39, 119, 0.2); }
 .art-meta { font-size: 13px; color: var(--primary-color); font-weight: 700; text-transform: uppercase; }
 .swiper-pagination-bullet-active { background: var(--primary-color) !important; }
 
@@ -962,31 +921,31 @@ section { min-height: 100vh; padding: 120px 20px 80px; }
    6. EXPERIENCE (Timeline)
    ========================================= */
 #experience { background: var(--light-sec); }
-.timeline-title i { color: var(--primary-color); box-shadow: 0 10px 20px rgba(249, 115, 22, 0.1); }
-.time-date { color: var(--primary-color); background: rgba(249, 115, 22, 0.1); padding: 6px 16px; border-radius: 20px; font-weight: 700; }
+.timeline-title i { color: var(--primary-color); box-shadow: 0 10px 20px rgba(219, 39, 119, 0.1); }
+.time-date { color: var(--primary-color); background: rgba(219, 39, 119, 0.1); padding: 6px 16px; border-radius: 20px; font-weight: 700; }
 .time-dot { border: 4px solid var(--primary-color); }
 .timeline-item:hover .time-dot { background: var(--primary-color); box-shadow: 0 0 15px var(--primary-color); }
 
 /* =========================================
-   7. CONTACT (Cokelat Glow)
+   7. CONTACT (Berry Glow)
    ========================================= */
 .contact-box { background: var(--dark-bg); border-radius: 30px; padding: 80px 40px; text-align: center; position: relative; overflow: hidden; z-index: 1; }
 .contact-box::before {
     content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
-    background: radial-gradient(circle, rgba(251, 191, 36, 0.15) 0%, transparent 60%);
+    background: radial-gradient(circle, rgba(244, 114, 182, 0.15) 0%, transparent 60%);
     z-index: -1; animation: rotateGlow 15s linear infinite;
 }
-.btn-contact { background: linear-gradient(to right, var(--primary-color), var(--accent-color)); color: #fff; box-shadow: 0 15px 30px rgba(249, 115, 22, 0.3); }
-.social-btn:hover { background: var(--primary-color); box-shadow: 0 10px 20px rgba(249, 115, 22, 0.4); border-color: var(--primary-color); color: #fff; }
+.btn-contact { background: linear-gradient(to right, var(--primary-color), var(--text-muted-light)); color: #fff; box-shadow: 0 15px 30px rgba(219, 39, 119, 0.3); }
+.social-btn:hover { background: var(--primary-color); box-shadow: 0 10px 20px rgba(219, 39, 119, 0.4); border-color: var(--primary-color); color: #fff; }
 
 /* =========================================
    8. CERTIFICATIONS
    ========================================= */
-.cert-info { background: rgba(45, 27, 13, 0.95); }
-.cert-info h4 { color: var(--accent-color); }
+.cert-info { background: rgba(80, 7, 36, 0.95); }
+.cert-info h4 { color: var(--text-muted-light); }
 
 /* =========================================
-   9. FOOTER (Precision Espresso)
+   9. FOOTER (Precision Berry)
    ========================================= */
 .footer { background: var(--dark-bg); color: #fff; padding: 80px 0 30px; border-top: 1px solid rgba(255, 255, 255, 0.05); }
 .footer-logo span { color: var(--primary-color); }
@@ -996,7 +955,7 @@ section { min-height: 100vh; padding: 120px 20px 80px; }
 
 /* Responsive HP Fix */
 @media (max-width: 768px) {
-    .hero-text-center h1 { font-size: 42px; }
+    .hero-text-center h1 { font-size: 38px; }
     .hero-buttons { flex-direction: column; }
     .btn-outline { margin-left: 0; margin-top: 10px; }
     .about-bento { flex-direction: column; }
