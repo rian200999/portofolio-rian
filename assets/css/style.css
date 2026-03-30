@@ -1,19 +1,22 @@
 :root {
     /* Palet Terang (Light Mode) */
     --light-bg: #ffffff;
-    --light-sec: #f8fafc; /* Abu-abu super muda untuk selang-seling */
-    --text-dark: #0f172a; 
+    --light-sec: #fff1f2; /* Latar tipis rona pink muda */
+    --text-dark: #1e293b; 
     --text-muted-dark: #64748b;
     
-    /* Palet Gelap (Dark Mode untuk Section Portofolio) */
-    --dark-bg: #0f172a;
-    --dark-sec: #1e293b;
-    --text-light: #f8fafc;
-    --text-muted-light: #94a3b8;
+    /* Palet Gelap TOTAL PINK TUA (Deep & Bold) */
+    /* --dark-bg: Sebelumnya Navy #0f172a */
+    --dark-bg: #4c0519; /* Pink Maroon Sangat Tua (Deep Burgundy) */
+    /* --dark-sec: Sebelumnya Navy #1e293b */
+    --dark-sec: #831843; /* Pink Deep Fuchsia Tua (Sedikit lebih terang dari bg) */
+    
+    --text-light: #fdf2f8; /* Teks putih dengan rona pink tipis */
+    --text-muted-light: #f472b6; /* Teks abu-abu muda ganti jadi pink muda cerah */
 
-    /* Aksen Warna JTC (Biru/Indigo) */
-    --primary-color: #0284c7; /* Sky Blue Gelap */
-    --accent-color: #38bdf8; /* Sky Blue Terang */
+    /* Aksen Warna PINK (Fuchsia & Muda) */
+    --primary-color: #db2777; /* Pink Fuchsia Tua Cerah (Primary) */
+    --accent-color: #f472b6;  /* Pink Muda (Accent) */
     --transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -803,4 +806,68 @@ section { min-height: 100vh; padding: 120px 20px 80px; }
     .footer-nav-links { justify-content: center; }
     .social-icons-footer { justify-content: center; }
     .footer-bottom { flex-direction: column; gap: 15px; }
+}
+
+
+/* Update Logo Rian. */
+.logo { color: var(--text-dark); }
+.logo span { color: var(--primary-color); }
+
+/* Tombol (Update Shadow & Background Hover) */
+.btn { 
+    background: var(--primary-color); 
+    box-shadow: 0 10px 20px rgba(219, 39, 119, 0.2); /* Shadow Pink */
+}
+.btn:hover { 
+    background: var(--accent-color);
+    box-shadow: 0 15px 25px rgba(219, 39, 119, 0.4); 
+}
+.btn-outline {
+    color: var(--primary-color); 
+    border: 2px solid var(--primary-color); 
+}
+.btn-outline:hover { 
+    background: rgba(219, 39, 119, 0.05); /* Hover Pink Transparan */
+}
+
+/* Badge Hero & Bento */
+.badge-hero, .bento-badge {
+    background: rgba(219, 39, 119, 0.1); /* Latar Pink Bening */
+    color: var(--primary-color);
+    border: 1px solid rgba(219, 39, 119, 0.2);
+}
+
+/* Bahasa Aktif (Update Glow Pink Tua) */
+.lang-badge.active-glow {
+    border: 1.5px solid rgba(219, 39, 119, 0.3);
+    background: rgba(219, 39, 119, 0.02);
+}
+.lang-badge.active-glow:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 25px rgba(219, 39, 119, 0.15);
+}
+
+/* Skill Card Hover (Update Glow Pink Muda Neon) */
+.tech-card-big:hover {
+    background: rgba(244, 114, 182, 0.05); /* Latar Hover Pink Muda Bening */
+    box-shadow: 0 20px 50px rgba(244, 114, 182, 0.2); /* Glow Pink Muda */
+    border-color: rgba(244, 114, 182, 0.3);
+}
+
+/* Timeline Node Glow */
+.timeline-item:hover .time-dot {
+    background: var(--primary-color);
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
+/* Contact Box (Update Glow Latar Pink Muda) */
+.contact-box::before {
+    background: radial-gradient(circle, rgba(244, 114, 182, 0.15) 0%, transparent 60%);
+}
+
+/* Sosial Media Muter di Contact (Pink Murni) */
+.social-btn:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 20px rgba(219, 39, 119, 0.4);
 }
