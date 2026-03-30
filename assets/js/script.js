@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     for (const section of sections) {
         try {
-            const response = await fetch(`section/${section}.html`);
+            // UBAH BARIS INI:
+            const response = await fetch(`html/section/${section}.html`);
             if (response.ok) {
                 const html = await response.text();
                 const sectionEl = document.createElement("div");
