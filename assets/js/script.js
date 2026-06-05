@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     appContent.innerHTML = "";
 
     // Pastikan nama file ini BENAR-BENAR ADA di folder html/section/
-    const sections = ["home", "about", "skills", "experience", "certifications", "portofolio", "articles", "contact", "footer"];
+    const sections = ["home", "about", "skills", "experience", "portofolio", "articles", "contact", "footer"];
 
     for (const section of sections) {
         try {
